@@ -27,6 +27,9 @@ public class UsuarioService {
         return nuevoUsuario;
     }
 
-
+    public void borrarUsuarioById(int id)
+    {
+        usuarioRepository.deleteById(id);
+    }
 }
 
